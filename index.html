@@ -17,6 +17,15 @@
             padding: 0 40px;
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y2KEGKFKE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5Y2KEGKFKE');
+    </script>
 </head>
 <body id="body">
     <div id="main">
@@ -55,12 +64,12 @@
                 I'm interested in methods that leverage inherent structure (as an inductive bias) in multivariate time series data to learn "information preserving" features that are maximally useful for solving downstream tasks. I believe this is crucial for effectively applying LLM scaling recipe (data + compute + autoregressive modeling) to other untapped domains, of which robotics is the one I'm currently invested in. Some questions I find interesting & look forward to discuss and work on:
               </p>
               <ul>
-                <li> Can flexible representations be learned for low-level skills that are common in everyday manipulation tasks? </li>
-                <li> How to predict tool affordances by generalization through abstract concepts or by using world models? </li>
-                <li> Best way to learn dynamic sensorimotor policies for dexterous tasks? (teleop+imitation impractical here) </li>
+                <li> Can flexible representations be learned for low-level skills in manipulation? (semantic action tokenization) </li>
+                <li> How can we enable pretraining on HOI data/videos? (morphology-flexible retargetting/reward framework) </li>
+                <li> What are best Sim2Real practices for dynamic sensorimotor policies? (teleop+imitation impractical here) </li>
               </ul>
               <p>
-              PS1: My latest work <a href="https://quest-model.github.io">QueST</a> is a step towards answering the first question!<br>
+              PS1: My latest NeurIPS work <a href="https://quest-model.github.io">QueST</a> is a step towards answering the first question!<br>
               PS2: <span style="color: rgb(128, 37, 148);"><strong>I'm looking for PhD positions starting Fall 2025.</strong></span> Feel free to reach out to me or please reply when I do :)
             </p>
         </div>
@@ -73,8 +82,8 @@
               </a>
               <a href="https://quest-model.github.io" class="research-proj-title"> QueST: Self-Supervised Skill Abstractions for Learning Continuous Control </a>
               <p> <b>Atharva Mete</b>, Haotian Xue, Albert Wilcox, Yongxin Chen, Animesh Garg <br>
-                  Preprint<br>
-                  <!-- <b>NeurIPS 2024</b> (<strong style="font-weight: bold; color: rgb(239, 16, 16);">Spotlight</strong>) <br> -->
+                  <!-- Preprint<br> -->
+                  <span style="color: rgb(230, 148, 24);">NeurIPS 2024</span> <br>
                   <a href="https://arxiv.org/abs/2407.15840">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://quest-model.github.io">Project Page </a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://github.com/pairlab/QueST">Code </a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
@@ -110,7 +119,7 @@
               <a href="https://drive.google.com/file/d/150VcY1Ap62jSJthO7Kwg9otn3oRkP9gf/view" class="research-proj-title"> A Novel Approach to Autonomous Aerial
                 Manipulation using Multiple Drones </a>
               <p> Team AeRoVe, UMIC <br>
-                  IARC Symposium on Dynamic Flight Behavior<br>
+                  IARC Symposium on Dynamic Flight Behavior 2022<br>
                   <!-- <b>NeurIPS 2024</b> (<strong style="font-weight: bold; color: rgb(239, 16, 16);">Spotlight</strong>) <br> -->
                   <a href="https://drive.google.com/file/d/150VcY1Ap62jSJthO7Kwg9otn3oRkP9gf/view">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                   <a href="https://youtu.be/Fl70FG0QKSU?si=Q690cc_d2xpCnbrT">Video</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
@@ -125,10 +134,22 @@
             <h2>Projects</h2>
 
             <div class="research-proj">
+              <a href="./data/diffRL_ppt.pdf" class="research-thumb">
+              <img src="images/projects/diffRL.png" alt="" style="width: 200px; height: 130px;" />
+              </a>
+              <a href="./data/diffRL_ppt.pdf" class="research-proj-title"> Consistent Q-Learning [Spring 2024] </a>
+              <p>Albert Wilcox, <b>Atharva Mete</b>, Chetan Reddy<br>
+              Policy improvement through score matching involves differentiating through full diffusion MC, we propose to use consistency-based Q-function that gives meaningful gradients in one step <br>
+                <a href="./data/diffRL_report.pdf">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="./data/diffRL_ppt.pdf">Slides</a>
+              </p>
+            </div>
+
+            <div class="research-proj">
               <a href="https://sites.google.com/view/atharva-mete/robotics/iarc-2022?authuser=1" class="research-thumb">
               <img src="images/projects/IARC.jpeg" alt="" style="width: 200px; height: 130px;" />
               </a>
-              <a href="https://sites.google.com/view/atharva-mete/robotics/iarc-2022?authuser=1" class="research-proj-title"> International Aerial Robotics Challenge (Mission 9) </a>
+              <a href="https://sites.google.com/view/atharva-mete/robotics/iarc-2022?authuser=1" class="research-proj-title"> International Aerial Robotics Challenge [Mission 9: 2019-2022] </a>
               <p>Innovation Cell IITB<br>
               Led a team of 20+ undergrads in the making of a fully autonomous mother-daughter drone system to attempt performing a precise insertion task mid-air on a moving platform<br>
                 <a href="https://sites.google.com/view/atharva-mete/robotics/iarc-2022?authuser=0">Blog with videos</a>
